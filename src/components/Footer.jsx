@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import MenuIcon from '@material-ui/icons/Menu';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 class Footer extends Component {
 
@@ -14,11 +17,21 @@ class Footer extends Component {
             position: "fixed",
             bottom: 0,
             left: 0,
-            width: "100%"
+            width: "100%",
+            height: "7%"
           }}>
-            <IconButton edge="end" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-              <MenuIcon />
-             </IconButton>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <span>Contact us: </span>
+              <IconButton color="inherit">
+                <FacebookIcon/>
+              </IconButton>
+              <IconButton color="inherit">
+                <TwitterIcon/>
+              </IconButton>
+              <IconButton color="inherit">
+                <InstagramIcon/>
+              </IconButton>
+            </Box>
           </BottomNavigation>
         )
     }

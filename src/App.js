@@ -4,7 +4,7 @@ import Page from './components/Page.jsx';
 
 function App() {
   return (
-    <div class="App">
+    <div className="App">
       <Page/>
     </div>
   );

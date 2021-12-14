@@ -8,11 +8,8 @@ class Page extends Component {
     render() {
         return(
             <Box>
-                <Navbar sx={{ mb: 100 }}/>
+                <Navbar/>
                 <Box sx={{
-                    mx: 'auto',
-                    width: 900,
-                    //border: '1px solid black',
                     mt: 2
                 }}>
                     <Form/>
