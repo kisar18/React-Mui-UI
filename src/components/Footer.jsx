@@ -19,7 +19,9 @@ class Footer extends Component {
             left: 0,
             width: "100%",
             height: "7%"
-          }}>
+            }}
+            onClick={() => this.props.onCloseMobileMenu()}
+          >
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <span>Contact us: </span>
               <IconButton color="inherit">

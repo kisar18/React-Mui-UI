@@ -5,16 +5,35 @@ import Box from '@mui/material/Box';
 import Form from './Form.jsx';
 
 class Page extends Component {
+
+    state = {
+        mobileMenuVisible: false
+    }
+
+    showMobileMenu = () => {
+        this.setState({mobileMenuVisible: true});
+    }
+    
+    closeMobileMenu = () => {
+        if(this.state.mobileMenuVisible) {
+            this.setState({mobileMenuVisible: false});
+        }
+    }
+
     render() {
         return(
             <Box>
-                <Navbar/>
+                <Navbar
+                    mobileMenuVisible={this.state.mobileMenuVisible}
+                    onShowMobileMenu={this.showMobileMenu}
+                    onCloseMobileMenu={this.closeMobileMenu}
+                />
                 <Box sx={{
                     mt: 2
                 }}>
-                    <Form/>
+                    <Form onCloseMobileMenu={this.closeMobileMenu}/>
                 </Box>
-                <Footer/>
+                <Footer onCloseMobileMenu={this.closeMobileMenu}/>
             </Box>
         )
     }
