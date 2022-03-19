@@ -26,7 +26,6 @@ function Navbar(props) {
               size="large"
               edge="start"
               color="inherit"
-              aria-label="open drawer"
               sx={{ mr: 2 }}
             >
               <MenuIcon />
@@ -46,22 +45,19 @@ function Navbar(props) {
             <InputBase
               sx={{ ml: 1, flex: 1 }}
               placeholder="Search"
-              inputProps={{ 'aria-label': 'search' }}
             />
-            <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
+            <IconButton type="submit" sx={{ p: '8px' }}>
               <SearchIcon />
             </IconButton>
           </Paper>
-          {/* <Box sx={{ flexGrow: 1 }} /> */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+            <IconButton size="large" color="inherit">
               <Badge badgeContent={5} color="error">
                 <MailIcon />
               </Badge>
             </IconButton>
             <IconButton
               size="large"
-              aria-label="show 17 new notifications"
               color="inherit"
             >
               <Badge badgeContent={11} color="error">
@@ -71,8 +67,6 @@ function Navbar(props) {
             <IconButton
               size="large"
               edge="end"
-              aria-label="account of current user"
-              aria-haspopup="true"
               color="inherit"
             >
               <AccountCircle />
@@ -81,8 +75,6 @@ function Navbar(props) {
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="show more"
-              aria-haspopup="true"
               color="inherit"
               onClick={() => props.onShowMobileMenu()}
             >

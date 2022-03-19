@@ -10,28 +10,28 @@ function App() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const showMobileMenu = () => {
-      setMobileMenuVisible(true);
+    setMobileMenuVisible(true);
   }
   
   const closeMobileMenu = () => {
-      if(mobileMenuVisible) {
-          setMobileMenuVisible(false);
-      }
+    if(mobileMenuVisible) {
+      setMobileMenuVisible(false);
+    }
   }
 
   return (
     <BrowserRouter>
-            <Navbar
-                mobileMenuVisible={mobileMenuVisible}
-                onShowMobileMenu={showMobileMenu}
-                onCloseMobileMenu={closeMobileMenu}
-            />
-            <Routes>
-                <Route path='/' exact element={<Form onCloseMobileMenu={closeMobileMenu} />} />
-                <Route path='/results' exact element={<Formresults/>} />
-            </Routes>
-            <Footer onCloseMobileMenu={closeMobileMenu}/>
-        </BrowserRouter>
+      <Navbar
+        mobileMenuVisible={mobileMenuVisible}
+        onShowMobileMenu={showMobileMenu}
+        onCloseMobileMenu={closeMobileMenu}
+      />
+      <Routes>
+        <Route path='/' exact element={<Form onCloseMobileMenu={closeMobileMenu} />} />
+        <Route path='/results' exact element={<Formresults/>} />
+      </Routes>
+      <Footer onCloseMobileMenu={closeMobileMenu}/>
+    </BrowserRouter>
   );
 }
 

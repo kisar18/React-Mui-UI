@@ -28,11 +28,11 @@ function Formresults() {
       >
         <List>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}} >FirstName: {location.state.firstName}</ListItemText>
+            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}} >First name: {location.state.firstName}</ListItemText>
           </ListItem>
           <Divider />
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}}>LastName: {location.state.lastName}</ListItemText>
+            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}}>Last name: {location.state.lastName}</ListItemText>
           </ListItem>
           <Divider />
           <ListItem>
@@ -44,7 +44,7 @@ function Formresults() {
           </ListItem>
           <Divider />
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}}>FavouriteColor: {location.state.favouriteColor}</ListItemText>
+            <ListItemText primaryTypographyProps={{ fontSize: '20px', fontWeight: "bold"}}>Favourite color: {location.state.favouriteColor}</ListItemText>
           </ListItem>
           <Divider />
           <ListItem>

@@ -15,7 +15,7 @@ function MobileMenu() {
     <Paper sx={{ width: { xs: '50%', sm: '25%' }, position: "absolute", right: "0%", zIndex: 1 }}>
       <MenuList>
         <MenuItem>
-          <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+          <IconButton size="large" color="inherit">
             <Badge badgeContent={5} color="error">
             <MailIcon />
             </Badge>
@@ -25,7 +25,6 @@ function MobileMenu() {
         <MenuItem>
           <IconButton
               size="large"
-              aria-label="show 17 new notifications"
               color="inherit"
           >
               <Badge badgeContent={11} color="error">
@@ -37,8 +36,6 @@ function MobileMenu() {
         <MenuItem>
           <IconButton
               size="large"
-              aria-label="account of current user"
-              aria-haspopup="true"
               color="inherit"
           >
               <AccountCircle />

@@ -56,7 +56,7 @@ function Form(props) {
         <Box sx={{ mt: 2 }}>
           <TextField 
             name="firstName"
-            label="First Name"
+            label="First name"
             required
             fullWidth
             value={firstName}
@@ -66,7 +66,7 @@ function Form(props) {
         <Box sx={{ mt: 2 }}>
           <TextField 
             name="lastName" 
-            label="Last Name" 
+            label="Last name" 
             required
             fullWidth
             value={lastName}
