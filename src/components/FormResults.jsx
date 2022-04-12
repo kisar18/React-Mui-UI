@@ -56,8 +56,16 @@ function Formresults() {
           </ListItem>
         </List>
       </Box>
-      <Link to='/' style={{ color: "#1976d2" }}>
-          <Typography sx={{ my: 4 }} variant='h3'>Go back</Typography>
+      <Link to='/' style={{ 
+        color: "#1976d2", 
+        marginTop: '15px', 
+        border: '3px solid #1976d2', 
+        borderRadius: '10px', 
+        padding: '15px',
+        textDecoration: 'none'
+        }}
+      >
+          <Typography variant='h3'>Go back</Typography>
       </Link>
     </Box>
   );
