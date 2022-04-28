@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './components/Navbar.jsx';
+import Header from './components/Header.jsx';
 import Form from './components/Form.jsx';
 import Formresults from './components/FormResults.jsx';
 import Footer from './components/Footer.jsx';
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar
+      <Header
         mobileMenuVisible={mobileMenuVisible}
         onShowMobileMenu={showMobileMenu}
         onCloseMobileMenu={closeMobileMenu}
