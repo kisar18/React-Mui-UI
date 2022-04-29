@@ -22,13 +22,13 @@ function Footer(props) {
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <span>Contact us: </span>
-        <IconButton color="inherit">
+        <IconButton color="inherit" href='https://www.facebook.com'>
           <FacebookIcon/>
         </IconButton>
-        <IconButton color="inherit">
+        <IconButton color="inherit" href='https://www.twitter.com'>
           <TwitterIcon/>
         </IconButton>
-        <IconButton color="inherit">
+        <IconButton color="inherit" href='https://www.instagram.com'>
           <InstagramIcon/>
         </IconButton>
       </Box>

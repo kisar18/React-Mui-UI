@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -39,6 +39,31 @@ function Form(props) {
       e.preventDefault();
       setRedirect(true);
   }
+
+  useEffect(() => {
+    if(redirect) {
+      navigate("/results", {state:{
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        gender: gender,
+        favouriteColor: favouriteColor,
+        employed: employed,
+        notes: notes
+      }});
+  }
+    
+  }, [
+    redirect, 
+    firstName, 
+    lastName, 
+    email,
+    gender,
+    favouriteColor,
+    employed,
+    notes, 
+    navigate
+  ]);
   
   return (
     <Box sx={{
@@ -137,20 +162,10 @@ function Form(props) {
           <Box sx={{ display: "flex", justifyContent: "space-around" }}>
             <Button type='submit' variant="contained" size="large">Submit</Button>
             <Button type="button" variant="outlined" sx={{ border: '1px solid #1976d2' }} onClick={handleClear} >
-            Clear Values
+              Clear Values
             </Button>
           </Box>
         </Box>
-        { redirect && navigate("/results", {state:{
-          firstName: firstName,
-          lastName: lastName,
-          email: email,
-          gender: gender,
-          favouriteColor: favouriteColor,
-          employed: employed,
-          notes: notes
-        }})
-        }
       </form>
     </Box>
   )
