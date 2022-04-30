@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header.jsx';
+import MobileMenu from './components/MobileMenu';
 import Form from './components/Form.jsx';
 import Formresults from './components/FormResults.jsx';
 import Footer from './components/Footer.jsx';
@@ -22,13 +23,13 @@ function App() {
   return (
     <BrowserRouter>
       <Header
-        mobileMenuVisible={mobileMenuVisible}
         onShowMobileMenu={showMobileMenu}
         onCloseMobileMenu={closeMobileMenu}
       />
+      {mobileMenuVisible && (<MobileMenu />)}
       <Routes>
         <Route path='/' exact element={<Form onCloseMobileMenu={closeMobileMenu} />} />
-        <Route path='/results' exact element={<Formresults/>} />
+        <Route path='/results' exact element={<Formresults onCloseMobileMenu={closeMobileMenu}/>} />
       </Routes>
       <Footer onCloseMobileMenu={closeMobileMenu}/>
     </BrowserRouter>

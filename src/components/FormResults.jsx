@@ -7,7 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from '@mui/material/Typography';
 
-function Formresults() {
+function Formresults(props) {
   const location = useLocation();
 
   return (
@@ -17,6 +17,7 @@ function Formresults() {
       alignItems: "center",
       mt: 2
       }}
+      onClick={() => props.onCloseMobileMenu()}
     >
       <Typography sx={{ color: "#1976d2", fontWeight: "bold", my: 4 }} variant='h3'>↓ Results ↓</Typography>
       <Box sx={{ 

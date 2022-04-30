@@ -13,7 +13,6 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import InputBase from '@mui/material/InputBase';
 import Paper from '@mui/material/Paper';
-import MobileMenu from './MobileMenu';
 
 function Navbar(props) {
 
@@ -83,7 +82,6 @@ function Navbar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      {props.mobileMenuVisible && (<MobileMenu />)}
     </Box>
   );
 }

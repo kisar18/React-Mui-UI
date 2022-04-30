@@ -17,7 +17,7 @@ function MobileMenu() {
         <MenuItem>
           <IconButton size="large" color="inherit">
             <Badge badgeContent={5} color="error">
-            <MailIcon />
+              <MailIcon />
             </Badge>
           </IconButton>
           <p>Messages</p>
@@ -28,7 +28,7 @@ function MobileMenu() {
               color="inherit"
           >
               <Badge badgeContent={11} color="error">
-              <NotificationsIcon />
+                <NotificationsIcon />
               </Badge>
           </IconButton>
           <p>Notifications</p>
