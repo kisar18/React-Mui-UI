@@ -24,21 +24,21 @@ function MobileMenu() {
         </MenuItem>
         <MenuItem>
           <IconButton
-              size="large"
-              color="inherit"
+            size="large"
+            color="inherit"
           >
-              <Badge badgeContent={11} color="error">
-                <NotificationsIcon />
-              </Badge>
+            <Badge badgeContent={11} color="error">
+              <NotificationsIcon />
+            </Badge>
           </IconButton>
           <p>Notifications</p>
         </MenuItem>
         <MenuItem>
           <IconButton
-              size="large"
-              color="inherit"
+            size="large"
+            color="inherit"
           >
-              <AccountCircle />
+            <AccountCircle />
           </IconButton>
           <p>Profile</p>
         </MenuItem>

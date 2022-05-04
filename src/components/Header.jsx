@@ -22,7 +22,7 @@ function Navbar(props) {
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box sx={{ display: "flex", alignItems: 'center'}}>
             <IconButton
-              size="large"
+              size="medium"
               edge="start"
               color="inherit"
               sx={{ mr: 2 }}
@@ -33,7 +33,7 @@ function Navbar(props) {
               variant="h6"
               noWrap
               component="div"
-              sx={{ display: { xs: 'none', sm: 'block' } }}
+              sx={{ mr: 2 }}
             >
               MUI
             </Typography>
